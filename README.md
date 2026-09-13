@@ -15,24 +15,33 @@ The project was awarded first place among competing engineering projects for its
 
 ![Hackathon Trophy](assets/hackathon_trophy.jpg)
 
-## System Architecture
+## Rapid Prototyping & System Architecture
 
-The hardware architecture of Nabdh consists of three primary stages:
-1. **Signal Acquisition:** Analog front-end sensors capture raw physiological signals.
+Due to the strict time constraints of the Hackathon, the hardware architecture was designed utilizing reliable off-the-shelf sensor modules to accelerate the proof-of-concept phase, focusing engineering efforts on integration, embedded software, and product design.
+
+The system consists of three primary stages:
+1. **Signal Acquisition:** 
+   * **ECG Acquisition:** Utilized the AD8232 single-lead heart rate monitor front-end module.
+   * **Photoplethysmography (PPG):** Utilized a MAX sensor module (e.g., MAX30102) for pulse and potential SpO2 derivation.
 2. **Processing Unit:** An embedded microcontroller digitizes the analog inputs, applies digital filtering algorithms to remove baseline wander and high-frequency noise, and extracts clinical parameters (e.g., heart rate).
 3. **User Interface:** A compact LCD screen provides real-time visualization of the processed vital signs.
 
+### Breadboard Assembly and Testing
+During the hackathon, the sensor integration and embedded C/C++ firmware were iteratively tested on a breadboard setup with live human subjects and validated using an oscilloscope before finalizing the 3D-printed enclosure.
+
+![Breadboard Testing](assets/nabdh_breadboard_1.jpg)
+
 ## Hardware Demonstration
 
-*A video demonstration of the prototype in operation, validating sensor responsiveness and real-time processing capabilities, is available in the repository (`assets/nabdh.mp4`).*
+*Note: A video demonstration of the prototype in operation, validating sensor responsiveness and real-time processing capabilities, can be viewed upon request.*
 
 ![Device Usage](assets/device_usage.jpg)
 
 ## Clinical and Engineering Relevance
 
 This prototype demonstrates practical competency in several core areas of Biomedical Engineering:
-* **Biosensor Interfacing:** Managing signal-to-noise ratio (SNR) in physical hardware.
-* **Embedded Systems:** Writing deterministic, low-latency code for real-time signal processing.
-* **Rapid Prototyping:** Utilizing CAD and 3D printing for medical device packaging.
+* **Biosensor Interfacing:** Rapidly integrating analog front-ends (AD8232) and digital sensors (MAX30102) with microcontrollers.
+* **Embedded Systems:** Writing deterministic, low-latency code for real-time signal processing and UI management.
+* **Rapid Prototyping:** Utilizing CAD and 3D printing for medical device packaging under severe time constraints.
 
 *Note: This repository serves as a portfolio demonstration of the hardware prototype and its associated documentation.*
