@@ -31,9 +31,13 @@ During the hackathon, the sensor integration and embedded C/C++ firmware were it
 
 ![Breadboard Testing](assets/nabdh_breadboard_1.jpg)
 
-## Hardware Demonstration
+## Hardware Demonstration & Live Testing
 
-*Note: A video demonstration of the prototype in operation, validating sensor responsiveness and real-time processing capabilities, can be viewed upon request.*
+Watch the live hardware demonstration of the Nabdh prototype measuring vital signs and validating real-time sensor responsiveness during subject testing:
+
+[![Nabdh Prototype Live Demo](https://img.youtube.com/vi/_p6Nn98H_nc/hqdefault.jpg)](https://youtu.be/_p6Nn98H_nc)
+
+🔗 **YouTube Video Demo:** [Watch on YouTube (Testing on Subject)](https://youtu.be/_p6Nn98H_nc)
 
 ![Device Usage](assets/device_usage.jpg)
 
@@ -44,4 +48,4 @@ This prototype demonstrates practical competency in several core areas of Biomed
 * **Embedded Systems:** Writing deterministic, low-latency code for real-time signal processing and UI management.
 * **Rapid Prototyping:** Utilizing CAD and 3D printing for medical device packaging under severe time constraints.
 
-*Note: This repository serves as a portfolio demonstration of the hardware prototype and its associated documentation.*
+*Note: This repository serves as an academic portfolio showcase of the hardware prototype and testing documentation.*
